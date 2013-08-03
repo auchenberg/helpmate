@@ -23,8 +23,8 @@ module.exports = {
       name: 'Helpmate'
     },
     facebook: {
-      clientID: '228897420592002',
-      clientSecret: '24c501d205de58738b49eca078c53814',
+      clientID: '423774561071001',
+      clientSecret: '08e8fa68803bbdde79a0722d1688dc0e',
       callbackURL: 'http://localhost:3000/auth/facebook/callback'
     },
     google: {
