@@ -1,0 +1,18 @@
+
+
+<div class="requests-list">
+
+  <h2>Your requests</h2>
+
+  {{#if requests.length}}
+    <ol>
+    {{#each requests}}
+      <li>
+        <h2><a href="/request/{{id}}"{subject}}</a></h2>
+        {{{content}}}
+      </li>
+    {{/each}}
+    </ol>
+  {{/if}}
+
+</div>

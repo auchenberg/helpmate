@@ -1,0 +1,28 @@
+
+<div class="content-request row">
+
+  <h1>{{article.title}}</h1>
+  <div class="meta">
+    <date>Request was placed at {{article.createdAt}}</date>
+  </div>
+
+  <div class='request-content'>
+    <p>{{article.content}}</p>
+  </div>
+
+  <div class='request-comments'>
+  {{#if request.comments.length}}
+    <ol>
+    {{#each equest.comments}}
+      <li>
+        {{{content}}}
+      </li>
+    {{/each}}
+    </ol>
+  {{/if}}
+
+  </div>
+
+
+</div>
+
