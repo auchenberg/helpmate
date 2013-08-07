@@ -110,18 +110,18 @@ RequestSchema.methods = {
    * @api private
    */
 
-  addComment: function (user, comment, cb) {
+  addComment: function (user, commentText, cb) {
     var notify = require('../mailer/notify');
 
     this.comments.push({
-      body: comment.body,
+      body: commentText,
       user: user._id
     });
 
     notify.comment({
       article: this,
       currentUser: user,
-      comment: comment.body
+      comment: commentText
     });
 
     this.save(cb);

@@ -1,0 +1,18 @@
+
+<div class="new-comment-form">
+
+  <form action="/requests/{{request.id}}/comments" method="post">
+    <input type="hidden" name="_csrf" value="{{csrf_token}}" />
+    <input type="hidden" name="_ref_type" value="request" />
+    <input type="hidden" name="_ref_id" value="{{request.id}}" />
+    <fieldset>
+
+      <div class="form-group">
+        <textarea class="form-control" name="content" id="content" placeholder="Din kommentar til denne opgave"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success pull-right">Opret kommentar</button>
+    </fieldset>
+  </form>
+
+</div>

@@ -1,22 +1,17 @@
+'use strict';
 
-/**
- * Module dependencies.
- */
-
-var mongoose = require('mongoose')
-
-/**
- * Create comment
- */
+var mongoose = require('mongoose'),
+    Request = mongoose.model('Request');
 
 exports.create = function (req, res) {
-  var article = req.article
-  var user = req.user
+  var request = req.request;
+  var user = req.user;
 
-  if (!req.body.body) return res.redirect('/articles/'+ article.id)
+  request.addComment(user, req.body.content, function (err) {
+    if (err) {
+      return res.render('500');
+    }
+    res.redirect('/request/'+ request.id);
+  });
 
-  article.addComment(user, req.body, function (err) {
-    if (err) return res.render('500')
-    res.redirect('/articles/'+ article.id)
-  })
-}
+};
