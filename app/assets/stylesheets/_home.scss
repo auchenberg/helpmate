@@ -113,27 +113,25 @@
   a{
     color: #43ac74;
   }
-  
+
   .btn{
     color:#ffffff;
 	margin-left: 40%;
 	width: 10em;
   }
-  
+
   ol{
     display:block;
     counter-reset: item;
     text-align:left;
+    margin:0;
+    padding: 0;
 
     li{
       display:block;
       border-bottom:2px solid #f3f3ed;
       position:relative;
       padding: 1em 0 1em 0;
-
-      .detail{
-        padding:0 0 0 3em;
-      }
 
       h2{
         font-size: 24px;

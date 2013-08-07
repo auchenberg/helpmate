@@ -150,19 +150,17 @@ body {
   display: block;
   counter-reset: item;
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
-/* line 128, ../../app/assets/stylesheets/_home.scss */
+/* line 130, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li {
   display: block;
   border-bottom: 2px solid #f3f3ed;
   position: relative;
   padding: 1em 0 1em 0;
 }
-/* line 134, ../../app/assets/stylesheets/_home.scss */
-.content-home ol li .detail {
-  padding: 0 0 0 3em;
-}
-/* line 138, ../../app/assets/stylesheets/_home.scss */
+/* line 139, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li h2 {
   font-size: 24px;
   line-height: 1em;
@@ -171,7 +169,7 @@ body {
   font-weight: light;
   font-family: "freight-sans-pro";
 }
-/* line 147, ../../app/assets/stylesheets/_home.scss */
+/* line 148, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li p {
   font-size: 16px;
   line-height: 1.4em;
@@ -179,7 +177,7 @@ body {
   font-weight: 500;
   margin-top: 1em;
 }
-/* line 155, ../../app/assets/stylesheets/_home.scss */
+/* line 156, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li .download {
   font-size: 14px;
   -webkit-border-radius: 6px;
@@ -197,16 +195,16 @@ body {
   border: 3px solid #43ac74;
   font-weight: 700;
 }
-/* line 168, ../../app/assets/stylesheets/_home.scss */
+/* line 169, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li .download:hover {
   background-color: #43ac74;
   color: #f6f6f6;
 }
-/* line 173, ../../app/assets/stylesheets/_home.scss */
+/* line 174, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li .download svg {
   display: none;
 }
-/* line 179, ../../app/assets/stylesheets/_home.scss */
+/* line 180, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li:last-child {
   border: 0;
 }
