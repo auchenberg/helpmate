@@ -15,7 +15,7 @@
       </header>
 
       <div class='request-content'>
-        <p>{{request.content}}</p>
+        <p>{{{nl2br request.content}}}</p>
       </div>
 
       <h3>Kommentarer</h3>
@@ -25,7 +25,7 @@
         <ol>
         {{#each request.comments}}
           <li>
-            {{{body}}}
+            {{{nl2br body}}}
           </li>
         {{/each}}
         </ol>
