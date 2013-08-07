@@ -101,15 +101,6 @@ RequestSchema.methods = {
 
   },
 
-  /**
-   * Add comment
-   *
-   * @param {User} user
-   * @param {Object} comment
-   * @param {Function} cb
-   * @api private
-   */
-
   addComment: function (user, commentText, cb) {
     var notify = require('../mailer/notify');
 
