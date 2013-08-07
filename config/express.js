@@ -8,7 +8,6 @@ var express = require('express'),
     flash = require('connect-flash'),
     pkg = require('../package.json'),
     exphbs  = require('express3-handlebars'),
-    sass = require('node-sass'),
     path = require('path'),
     helpers = require('../lib/helpers');
 
