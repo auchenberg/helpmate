@@ -10,6 +10,12 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.grid-tile {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 16px;
+}
+
 @import "content";
 @import "home";
 

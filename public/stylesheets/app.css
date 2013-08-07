@@ -10,14 +10,21 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* line 13, ../../app/assets/stylesheets/app.scss */
+.grid-tile {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 16px;
+}
+
 /* line 1, ../../app/assets/stylesheets/_home.scss */
 .home-intro {
   position: relative;
   color: #F9F9F9;
-}
-/* line 5, ../../app/assets/stylesheets/_home.scss */
-.home-intro .banner {
   background-color: #333;
+}
+/* line 6, ../../app/assets/stylesheets/_home.scss */
+.home-intro .banner {
   text-align: center;
   position: relative;
   background-repeat: no-repeat;
