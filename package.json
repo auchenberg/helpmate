@@ -25,9 +25,7 @@
     "notifier": "latest",
     "underscore": "latest",
     "async": "latest",
-    "view-helpers": "latest",
-    "forever": "latest",
-    "node-sass": "latest"
+    "forever": "latest"
   },
   "devDependencies": {
     "supertest": "latest",
