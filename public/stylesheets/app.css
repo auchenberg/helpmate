@@ -120,7 +120,7 @@ body {
 /* line 94, ../../app/assets/stylesheets/_home.scss */
 .home-intro .banner .btn {
   position: absolute;
-  bottom: 6em;
+  bottom: 2em;
   left: 50%;
   width: 10em;
   margin: 1em 0 0 -5em;
@@ -160,7 +160,7 @@ body {
   position: relative;
   padding: 1em 0 1em 0;
 }
-/* line 139, ../../app/assets/stylesheets/_home.scss */
+/* line 136, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li h2 {
   font-size: 24px;
   line-height: 1em;
@@ -169,7 +169,7 @@ body {
   font-weight: light;
   font-family: "freight-sans-pro";
 }
-/* line 148, ../../app/assets/stylesheets/_home.scss */
+/* line 145, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li p {
   font-size: 16px;
   line-height: 1.4em;
@@ -177,7 +177,7 @@ body {
   font-weight: 500;
   margin-top: 1em;
 }
-/* line 156, ../../app/assets/stylesheets/_home.scss */
+/* line 153, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li .download {
   font-size: 14px;
   -webkit-border-radius: 6px;
@@ -195,16 +195,16 @@ body {
   border: 3px solid #43ac74;
   font-weight: 700;
 }
-/* line 169, ../../app/assets/stylesheets/_home.scss */
+/* line 166, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li .download:hover {
   background-color: #43ac74;
   color: #f6f6f6;
 }
-/* line 174, ../../app/assets/stylesheets/_home.scss */
+/* line 171, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li .download svg {
   display: none;
 }
-/* line 180, ../../app/assets/stylesheets/_home.scss */
+/* line 177, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li:last-child {
   border: 0;
 }
