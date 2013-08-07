@@ -33,8 +33,16 @@ exports.create = function (req, res) {
 };
 
 exports.show = function(req, res){
-  res.render('requests/show', {
-    title: req.request.title,
-    article: req.request
+
+  Request.list({}, function(err, requests) {
+    if (err) {
+      return res.render('500');
+    }
+
+    res.render('requests/show', {
+      requests: requests,
+      request: req.request
+    });
   });
+
 };

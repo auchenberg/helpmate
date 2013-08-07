@@ -11,15 +11,9 @@ exports.index = function(req, res){
     if (err) {
       return res.render('500');
     }
-
-    Request.count().exec(function (err, count) {
-      res.render('dashboard/index', {
-        requests: requests,
-      });
+    res.render('dashboard/index', {
+      requests: requests,
     });
-
   });
-
-
 
 };

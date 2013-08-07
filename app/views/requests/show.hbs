@@ -1,26 +1,40 @@
 
-<div class="content-request row">
+<div class="content-request dashboard">
 
-  <h1>{{article.title}}</h1>
-  <div class="meta">
-    <date>Request was placed at {{article.createdAt}}</date>
-  </div>
+  {{> requests/index}}
 
-  <div class='request-content'>
-    <p>{{article.content}}</p>
-  </div>
+  <div class="preview">
 
-  <div class='request-comments'>
-  {{#if request.comments.length}}
-    <ol>
-    {{#each equest.comments}}
-      <li>
-        {{{content}}}
-      </li>
-    {{/each}}
-    </ol>
-  {{/if}}
+    <div class="request-show">
 
+      <header>
+        <h1>{{request.title}}</h1>
+        <div class="meta">
+          <small>{{request.createdAt}}</small>
+        </div>
+      </header>
+
+      <div class='request-content'>
+        <p>{{request.content}}</p>
+      </div>
+
+      <h3>Kommentarer</h3>
+
+      <div class='comments'>
+      {{#if request.comments.length}}
+        <ol>
+        {{#each request.comments}}
+          <li>
+            {{{body}}}
+          </li>
+        {{/each}}
+        </ol>
+      {{/if}}
+
+      {{> comments/new}}
+
+      </div>
+    </div>
   </div>
 
 

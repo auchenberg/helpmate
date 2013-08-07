@@ -2,14 +2,15 @@
 
 <div class="requests-list">
 
-  <h2>Your requests</h2>
+  <h3 class="title">Dine opgaver</h3>
 
   {{#if requests.length}}
     <ol>
     {{#each requests}}
       <li>
-        <h2><a href="/request/{{id}}"{subject}}</a></h2>
-        {{{content}}}
+        <a href="/request/{{id}}">
+          {{title}}
+        </a>
       </li>
     {{/each}}
     </ol>
