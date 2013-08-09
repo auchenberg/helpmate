@@ -4,7 +4,8 @@ var async = require('async'),
     requests = require('../app/controllers/requests'),
     comments = require('../app/controllers/comments'),
     home = require('../app/controllers/home'),
-    dashboard = require('../app/controllers/dashboard');
+    dashboard = require('../app/controllers/dashboard'),
+    settings = require('../app/controllers/settings');
 
 var articleAuth = [auth.requiresLogin, auth.article.hasAuthorization];
 
@@ -30,6 +31,7 @@ module.exports = function (app, passport) {
   app.get('/settings/preferences', auth.requiresLogin, settings.preferences);
   app.get('/settings/subscription', auth.requiresLogin, settings.subscription);
   app.get('/settings/billing', auth.requiresLogin, settings.billing);
+
 
   app.get('/auth/facebook',
     passport.authenticate('facebook', {
@@ -64,6 +66,7 @@ module.exports = function (app, passport) {
   app.param('id', requests.load);
 
   app.get('/', home.index);
+  app.get('/soon', home.soon);
 
   app.get('/dashboard', dashboard.index);
 
