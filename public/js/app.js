@@ -1,14 +1,11 @@
 $(function() {
 
   var height = windowHeight();
-  $(".banner").css("height", height+1);
-
-  /mobile/i.test(navigator.userAgent) && !location.hash &&
-    setTimeout(function () { height = windowHeight(); $(".banner").css("height", height+1); /*window.scrollTo(0, 1);*/ }, 1000);
+  $(".full-bg-banner").css("height", height+1);
 
   $(window).resize(function() {
     height = windowHeight();
-    $(".banner").css("height", height+1);
+    $(".full-bg-banner").css("height", height+1);
   });
 
   $(".btn").on("click", function(){
@@ -18,8 +15,6 @@ $(function() {
       return false;
   });
 
-  var imageNum = Math.floor(Math.random() * 2) + 1;
-  $('.banner').addClass('img-' + imageNum);
 
   runAnimation();
 });
@@ -34,7 +29,7 @@ function runAnimation(){
   $(".gradient").css("opacity", 1);
 
   setTimeout(function() {
-    $(".banner .position").css("opacity", 1);
+    $(".full-bg-banner .position").css("opacity", 1);
   }, 1500);
 
   setTimeout(function() {
