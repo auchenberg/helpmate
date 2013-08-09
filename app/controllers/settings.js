@@ -1,0 +1,44 @@
+
+'use strict';
+
+var mongoose = require('mongoose');
+
+exports.index = function(req, res){
+
+  res.render('settings/index', {
+    user: req.user
+  });
+
+};
+
+
+exports.update = function(req, res){
+
+  console.log('req', req);
+
+  var user = req.user;
+
+  user.update(req.body, function() {
+    res.redirect('/settings');
+  });
+
+};
+
+
+exports.preferences = function(req, res){
+  res.render('settings/preferences', {
+    user: req.user
+  });
+};
+
+exports.billing = function(req, res){
+  res.render('settings/billing', {
+    user: req.user
+  });
+};
+
+exports.subscription = function(req, res){
+  res.render('settings/subscription', {
+    user: req.user
+  });
+};

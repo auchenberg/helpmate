@@ -25,7 +25,11 @@ module.exports = function (app, passport) {
       failureFlash: 'Invalid email or password.'
     }), users.session);
 
-  app.get('/settings', users.show);
+  app.get('/settings', auth.requiresLogin, settings.index);
+  app.post('/settings', auth.requiresLogin, settings.update);
+  app.get('/settings/preferences', auth.requiresLogin, settings.preferences);
+  app.get('/settings/subscription', auth.requiresLogin, settings.subscription);
+  app.get('/settings/billing', auth.requiresLogin, settings.billing);
 
   app.get('/auth/facebook',
     passport.authenticate('facebook', {

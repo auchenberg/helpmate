@@ -1,0 +1,122 @@
+
+<div class="settings">
+
+  {{>settings/navigation}}
+
+  <div class="content-box">
+    <h3>Account settings</h3>
+
+  <form action="/settings" method="post">
+    <input type="hidden" name="_csrf" value="{{csrf_token}}" />
+    <fieldset>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <legend>Name</legend>
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" value="{{user.name}}">
+          </div>
+        </div>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+
+      <div class="row">
+        <div class="col-lg-8">
+
+          <legend>Home Address</legend>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="home_street_1" value="{{user.home_street_1}}" placeholder="home_street_1">
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="form-group">
+            <input type="text" class="form-control" name="home_street_2" value="{{user.home_street_2}}" placeholder="home_street_2">
+          </div>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-lg-6">
+          <input type="text" class="form-control" name="home_city" value="{{user.home_city}}" placeholder="home_city">
+        </div>
+
+        <div class="col-lg-2">
+          <input type="text" class="form-control zip" name="home_zip" value="{{user.home_zip}}" placeholder="home_zip">
+        </div>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+
+      <div class="row">
+        <div class="col-lg-8">
+
+          <legend>Work Address</legend>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="work_street_1" value="{{user.work_street_1}}" placeholder="work_street_1">
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="form-group">
+            <input type="text" class="form-control" name="work_street_2" value="{{user.work_street_2}}" placeholder="work_street_2">
+          </div>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-lg-6">
+          <input type="text" class="form-control" name="work_city" value="{{user.work_city}}" placeholder="work_city">
+        </div>
+
+        <div class="col-lg-2">
+          <input type="text" class="form-control zip" name="work_zip" value="{{user.work_zip}}" placeholder="work_zip">
+        </div>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <legend>Email & Phone</legend>
+
+          <div class="form-group">
+           <label for="email">Email address</label>
+            <input type="email" class="form-control" name="email" value="{{user.email}}">
+          </div>
+
+          <div class="form-group">
+           <label for="phone">Phone</label>
+            <input type="text" class="form-control" name="phone_number" value="{{user.phone_number}}" placeholder="phone_number">
+          </div>
+
+        </div>
+      </div>
+    </fieldset>
+
+
+    <div class="row form-group">
+      <div class="col-lg-8">
+        <button type="submit" class="btn btn-primary pull-right">Update account</button>
+      </div>
+    </div>
+
+
+
+
+  </form>
+
+  </div>
+</div>
+
+
+
