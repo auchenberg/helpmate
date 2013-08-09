@@ -17,6 +17,16 @@ var UserSchema = new Schema({
   hashed_password: { type: String, default: '' },
   salt: { type: String, default: '' },
   authToken: { type: String, default: '' },
+  is_activated: { type: Boolean, default: false },
+  home_street_1: { type: String, default: '' },
+  home_street_2: { type: String, default: '' },
+  home_city: { type: String, default: '' },
+  home_zip: { type: String, default: '' },
+  work_street_1: { type: String, default: '' },
+  work_street_2: { type: String, default: '' },
+  work_city: { type: String, default: '' },
+  work_zip: { type: String, default: '' },
+  phone_number: { type: String, default: '' },
   facebook: {},
   google: {}
 });
