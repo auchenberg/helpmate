@@ -156,7 +156,7 @@ body {
   text-align: center;
   width: auto;
   height: 350px;
-  top: -80px;
+  top: -110px;
 }
 /* line 58, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome .read-more-button,
@@ -214,17 +214,12 @@ body {
 
 /* line 1, ../../app/assets/stylesheets/_login.scss */
 .login .login-box {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
   background: #fff;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   height: 85px;
   width: 295px;
 }
-/* line 9, ../../app/assets/stylesheets/_login.scss */
+/* line 8, ../../app/assets/stylesheets/_login.scss */
 .login .login-box .button {
   font-family: "Helvetica Neue","Lucida Grande",sans-serif;
   text-decoration: none;
@@ -243,7 +238,7 @@ body {
   outline: 0;
   white-space: nowrap;
 }
-/* line 29, ../../app/assets/stylesheets/_login.scss */
+/* line 28, ../../app/assets/stylesheets/_login.scss */
 .login .login-box h3 {
   text-align: center;
   margin-top: 15px;
@@ -252,7 +247,7 @@ body {
   color: #333;
   display: none;
 }
-/* line 39, ../../app/assets/stylesheets/_login.scss */
+/* line 38, ../../app/assets/stylesheets/_login.scss */
 .login .login-box .fb {
   background: url(../img/facebook-sprite.png) 0 -25px;
   color: #FFF;
@@ -263,11 +258,11 @@ body {
   text-shadow: 0 -1px 0 #38456F;
   -webkit-font-smoothing: antialiased;
 }
-/* line 50, ../../app/assets/stylesheets/_login.scss */
+/* line 49, ../../app/assets/stylesheets/_login.scss */
 .login .login-box .btn {
   width: 100%;
 }
-/* line 54, ../../app/assets/stylesheets/_login.scss */
+/* line 53, ../../app/assets/stylesheets/_login.scss */
 .login .login-box form {
   display: none;
 }
@@ -323,15 +318,11 @@ body {
 
 /* line 3, ../../app/assets/stylesheets/_soon.scss */
 .content-soon .info {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
   background: #fff;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   height: 250px;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
 }
 /* line 11, ../../app/assets/stylesheets/_soon.scss */
 .content-soon .info h2 {
