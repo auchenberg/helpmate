@@ -7,14 +7,17 @@ var mongoose = require('mongoose')
   , User = mongoose.model('User')
   , utils = require('../../lib/utils')
 
+
 var login = function (req, res) {
   if (req.session.returnTo) {
     res.redirect(req.session.returnTo)
-    delete req.session.returnTo
-    return
+    delete req.session.returnTo;
+    return;
   }
-  res.redirect('/')
+  res.redirect('/');
 }
+
+
 
 exports.signin = function (req, res) {}
 
@@ -22,7 +25,18 @@ exports.signin = function (req, res) {}
  * Auth callback
  */
 
-exports.authCallback = login
+exports.authCallback = function(req, res) {
+
+  var user = req.user;
+
+  if(!user.is_activated) {
+    req.logout();
+    res.redirect('/soon?activated=false');
+  } else {
+    login(req, res);
+  }
+
+};
 
 /**
  * Show login form
@@ -32,8 +46,8 @@ exports.login = function (req, res) {
   res.render('users/login', {
     title: 'Login',
     message: req.flash('error')
-  })
-}
+  });
+};
 
 /**
  * Show sign up form
