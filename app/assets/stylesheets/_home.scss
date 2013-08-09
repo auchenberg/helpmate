@@ -1,52 +1,9 @@
-.home-intro {
-  position:relative;
-  color: #F9F9F9;
-  background-color: #333;
+.home-intro,
+.login {
 
-  .banner{
-    text-align:center;
-    position:relative;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:50% 50%;
-    min-height:25em;
-    background-image:url('../img/splash-2.jpg');
+  .welcome {
+    color: #F9F9F9;
 
-    .gradient{
-      display:block;
-      position:absolute;
-      top:0;
-      bottom:0;
-      left:0;
-      right:0;
-      min-width:100%;
-      min-height:100%;
-      background: -moz-linear-gradient(top,  rgba(69,72,77,0) 0%, rgba(34,34,34,0.15) 15%, rgba(0,0,0,.9) 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,0)), color-stop(15%,rgba(34,34,34,0.15)), color-stop(100%,rgba(0,0,0,.9))); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top,  rgba(69,72,77,0) 0%,rgba(34,34,34,0.15) 15%,rgba(0,0,0,.9) 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top,  rgba(69,72,77,0) 0%,rgba(34,34,34,0.15) 15%,rgba(0,0,0,.9) 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(top,  rgba(69,72,77,0) 0%,rgba(34,34,34,0.15) 15%,rgba(0,0,0,.9) 100%); /* IE10+ */
-      background: linear-gradient(to bottom,  rgba(69,72,77,0) 0%,rgba(34,34,34,0.15) 15%,rgba(0,0,0,.9) 100%); /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0045484d', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-
-      opacity: 0;
-      -webkit-transition: opacity 4s linear;
-      -moz-transition: opacity 4s linear;
-      -ms-transition: opacity 4s linear;
-      -o-transition: opacity 4s linear;
-      transition: opacity 4s linear;
-
-    }
-
-    .position{
-      width: 300px;
-      height:20em;
-      position:absolute;
-      top:50%;
-      left:50%;
-      margin:-15em 0 0 -150px;
-      z-index:1;
-    }
 
     h1 {
       font-size: 60px;
@@ -91,34 +48,28 @@
       }
     }
 
-    .btn{
+    .info {
+      text-align: center;
+      width: 400px;
+      height: 350px;
+      top: -80px;
+    }
+
+    .read-more-button {
       position:absolute;
-      bottom: 2em;
+      bottom: 40px;
       left: 50%;
       width: 10em;
       margin: 1em 0 0 -5em;
       z-index: 1;
-      font-weight:bold;
     }
   }
 }
 
-
 .content-home {
-  padding:2em 0 0 0;
+  padding: 25px;
   max-width: 600px;
   margin:0 auto;
-  padding:1em;
-
-  a{
-    color: #43ac74;
-  }
-
-  .btn{
-    color:#ffffff;
-	margin-left: 40%;
-	width: 10em;
-  }
 
   ol{
     display:block;
@@ -150,28 +101,6 @@
         margin-top:1em;
       }
 
-      .download{
-        font-size: 14px;
-        @include border-radius(6px);
-        padding:.5em 0;
-        color: #43ac74;
-        text-decoration:none;
-        display:inline-block;
-        margin:2em 0 .1em 0;
-        padding:.5em .9em;
-        z-index:1;
-        border:3px solid #43ac74;
-        font-weight:700;
-
-        &:hover{
-          background-color: #43ac74;
-          color: #f6f6f6;
-        }
-
-        svg{
-          display:none;
-        }
-      }
     }
 
     li:last-child{

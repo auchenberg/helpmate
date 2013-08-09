@@ -1,0 +1,48 @@
+.full-bg-banner {
+
+  position:relative;
+  background-color: #333;
+
+  text-align:center;
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:50% 50%;
+  min-height:25em;
+  background-image:url('../img/splash-2.jpg');
+
+  .gradient{
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    min-width:100%;
+    min-height:100%;
+    background: -moz-linear-gradient(top,  rgba(69,72,77,0) 0%, rgba(34,34,34,0.15) 15%, rgba(0,0,0,.9) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,0)), color-stop(15%,rgba(34,34,34,0.15)), color-stop(100%,rgba(0,0,0,.9))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(69,72,77,0) 0%,rgba(34,34,34,0.15) 15%,rgba(0,0,0,.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(69,72,77,0) 0%,rgba(34,34,34,0.15) 15%,rgba(0,0,0,.9) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(69,72,77,0) 0%,rgba(34,34,34,0.15) 15%,rgba(0,0,0,.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(69,72,77,0) 0%,rgba(34,34,34,0.15) 15%,rgba(0,0,0,.9) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0045484d', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+
+  .info {
+    height: 400px;
+    width: 295px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+
+    margin: auto;
+    padding: 20px;
+
+    text-align: left;
+  }
+
+}

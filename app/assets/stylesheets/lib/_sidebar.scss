@@ -1,0 +1,26 @@
+  .sidebar {
+    background: #fff;
+    width: 350px;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    overflow: auto;
+    border-right: 1px solid #ccc;
+
+    .title {
+      padding-left: 20px;
+    }
+
+  }
+
+  .content-box {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 350px;
+    right: 0;
+    overflow: auto;
+    padding: 20px;
+  }

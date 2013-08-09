@@ -1,19 +1,17 @@
 
 
-<div class="requests-list">
+<div class="requests-list sidebar">
 
   <h3 class="title">Dine opgaver</h3>
 
   {{#if requests.length}}
-    <ol>
+    <div class="list-group">
     {{#each requests}}
-      <li>
-        <a href="/request/{{id}}">
-          {{title}}
-        </a>
-      </li>
+      <a class="list-group-item" href="/request/{{id}}">
+        <span class="llist-group-item-heading">{{title}}</span>
+      </a>
     {{/each}}
-    </ol>
+    </div>
   {{/if}}
 
 </div>

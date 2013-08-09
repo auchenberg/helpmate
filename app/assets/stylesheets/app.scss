@@ -16,12 +16,18 @@ body {
   margin-bottom: 16px;
 }
 
+// lib
+@import "lib/sidebar";
+@import "lib/full-bg";
+
+// pages
+
 @import "content";
 @import "home";
-
 @import "login";
-
 @import "requests";
+@import "settings";
+@import "soon";
 
 
 
