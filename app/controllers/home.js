@@ -10,3 +10,11 @@ exports.index = function(req, res){
   }
 
 };
+
+
+exports.soon = function(req, res){
+
+  res.render('home/soon');
+
+
+};
