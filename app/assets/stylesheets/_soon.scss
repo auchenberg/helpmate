@@ -1,0 +1,31 @@
+.content-soon {
+
+  .info {
+    @include border-radius(10px);
+    background: #fff;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+
+    height: 250px;
+    width: 600px;
+
+    h2{
+      margin: 0;
+      font-size: 24px;
+      line-height:1em;
+      text-transform:uppercase;
+      color: #333;
+      font-weight:light;
+      font-family: "freight-sans-pro";
+    }
+
+    p{
+      font-size: 16px;
+      line-height:1.4em;
+      color: #999;
+      font-weight:500;
+      margin-top:1em;
+    }
+
+  }
+
+}
