@@ -2,13 +2,14 @@
 
 body {
   font-family: "freight-sans-pro";
-  font-weight:book;
+
+  &.state-logged-in {
+    overflow: hidden;
+  }
 }
 
-.sans {
-  font-family: "freight-sans-pro";
-  font-weight:light;
-}
+@import "lib/bootstrap";
+@import "lib/bootstrap-glyphicons";
 
 .grid-tile {
   background: #fff;
@@ -16,8 +17,21 @@ body {
   margin-bottom: 16px;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
+.btn {
+  font-weight: normal;
+}
+
+.img-rounded {
+  margin: 20px 0;
+}
+
 // lib
 @import "lib/sidebar";
+@import "lib/navigation";
 @import "lib/full-bg";
 
 // pages

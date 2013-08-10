@@ -1,0 +1,19 @@
+  <div class="sidebar navigation">
+
+    <div class="logo">Helpmate</div>
+
+    <div class="list-group">
+      <a href="/welcome"><span class="glyphicon glyphicon-home"></span> Home</a>
+      <a href="/dashboard"><span class="glyphicon glyphicon-list-alt"></span> Opgaver</a>
+      <a href="/settings"><span class="glyphicon glyphicon-wrench"></span> Indstillinger</a>
+    </div>
+
+    <div class="list bottom">
+      {{#if isAdmin}}
+        <a href="/admin"><span class="glyphicon glyphicon-lock"></span> Admin</a>
+      {{/if}}
+      <a href="/logout"><span class="glyphicon glyphicon-circle-arrow-left"></span> Logout</a>
+    </div>
+
+
+  </div>

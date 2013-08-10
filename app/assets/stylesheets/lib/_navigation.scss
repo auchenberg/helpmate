@@ -1,0 +1,35 @@
+.navigation {
+  background: #22262e;
+  width: 200px;
+  position: fixed;
+
+  a {
+    position: relative;
+    display: block;
+    padding: 20px 30px 20px 15px;
+    margin-bottom: -1px;
+    color: #d3d3d3;
+    border-left: 3px solid transparent;
+    font-weight: bold;
+
+    .glyphicon {
+      padding-right: 10px;
+      top: 3px;
+      position: relative;
+    }
+
+    &:hover,
+    &.active {
+      background: #2a2d35;
+      border-left: 3px solid #fff;
+      text-decoration: none;
+    }
+  }
+
+  .list.bottom {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+  }
+}

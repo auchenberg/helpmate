@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>Helpmate</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/stylesheets/lib/bootstrap.css"></link>
     <link rel="stylesheet" href="/stylesheets/app.css"></link>
     <link rel="shortcut icon", href="/favicon.png"  type="image/png"></link>
     <script type="text/javascript" src="//use.typekit.net/ihn0fsd.js"></script>
@@ -12,14 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="tex  t/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
-<body>
-
-{{#if isAuthenticated}}
-    {{> header}}
-{{/if}}
+<body class="{{#if isAuthenticated}}state-logged-in{{/if}}">
 
 <div class="content">
-    {{{body}}}
+    {{#if isAuthenticated}}
+        {{>navigation}}
+    {{/if}}
+
+    {{#if isAuthenticated}}
+    <div class="content-container">
+        {{{body}}}
+    </div>
+    {{else}}
+        {{{body}}}
+    {{/if}}
+
+
 </div>
 
 {{> footer}}
