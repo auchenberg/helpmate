@@ -85,6 +85,7 @@ module.exports = function (app, config, passport) {
     app.use(function(req, res, next){
       res.locals.csrf_token = req.session._csrf;
       res.locals.isAuthenticated = req.isAuthenticated();
+      res.locals.isAdmin = req.user ? req.user.is_admin === true : false;
       res.locals.userName = req.user ? req.user.name : '';
       next();
     });
