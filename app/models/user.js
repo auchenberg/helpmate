@@ -20,6 +20,7 @@ var UserSchema = new Schema({
   authToken: { type: String, default: '' },
   is_activated: { type: Boolean, default: false },
   is_admin: { type: Boolean, default: false },
+  is_helpmate: { type: Boolean, default: false },
   home_street_1: { type: String, default: '' },
   home_street_2: { type: String, default: '' },
   home_city: { type: String, default: '' },
