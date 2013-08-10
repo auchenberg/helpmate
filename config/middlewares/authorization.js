@@ -5,11 +5,30 @@
 
 exports.requiresLogin = function (req, res, next) {
   if (!req.isAuthenticated()) {
-    req.session.returnTo = req.originalUrl
-    return res.redirect('/login')
+    req.session.returnTo = req.originalUrl;
+    return res.redirect('/login');
   }
-  next()
-}
+  next();
+};
+
+exports.requiresAdmin = function (req, res, next) {
+  if (!req.user || req.user.is_admin !== true) {
+    req.flash('info', 'You are not authorized');
+    return res.redirect('/');
+  }
+  next();
+};
+
+exports.requiresActivation = function (req, res, next) {
+  if (!req.user || req.user.is_activated !== true) {
+    req.flash('info', 'Your user needs activation');
+    return res.redirect('/soon');
+  }
+  next();
+};
+
+
+
 
 /*
  *  User authorization routing middleware
