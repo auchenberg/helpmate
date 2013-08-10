@@ -5,9 +5,11 @@ var async = require('async'),
     comments = require('../app/controllers/comments'),
     home = require('../app/controllers/home'),
     dashboard = require('../app/controllers/dashboard'),
-    settings = require('../app/controllers/settings');
+    settings = require('../app/controllers/settings'),
+    admin = require('../app/controllers/admin');
 
-var articleAuth = [auth.requiresLogin, auth.article.hasAuthorization];
+var loggedInAuth = [auth.requiresLogin, auth.requiresActivation];
+var adminAuth = [auth.requiresLogin, auth.requiresAdmin];
 
 /**
  * Expose routes
@@ -72,5 +74,8 @@ module.exports = function (app, passport) {
 
   // comment routes
   app.post('/requests/:id/comments', auth.requiresLogin, comments.create);
+  // Admin
+  app.get('/admin', adminAuth, admin.index);
+  app.get('/admin/user/:user_id/activate', adminAuth, admin.activateUser);
 
 };

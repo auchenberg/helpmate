@@ -1,0 +1,46 @@
+
+
+
+<div class="user-list sidebar">
+
+
+</div>
+
+
+<div class="content-box">
+
+  <h3>Admin</h3>
+
+  <h4 class="title">Users</h4>
+
+  {{#if users.length}}
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>#</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Actions</td>
+      </tr>
+    </thead>
+    {{#each users}}
+      <tr>
+        <td><a href="admin/user/{{id}}">{{id}}</a></td>
+        <td>{{name}}</td>
+        <td>{{email}}</td>
+        <td>
+          {{#unless is_activated}}
+            <a href="/admin/user/{{id}}/activate" class="btn btn-success btn-xs">Activate</a>
+          {{/unless}}
+
+          <a href="/admin/user/{{id}}/requests" class="btn btn-default btn-xs">Requests</a>
+        </td>
+      </tr>
+    {{/each}}
+    </table>
+  {{/if}}
+
+
+
+</div>
+
