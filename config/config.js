@@ -1,17 +1,14 @@
 
 var path = require('path'),
-    rootPath = path.normalize(__dirname + '/..'),
-    templatePath = path.normalize(__dirname + '/../app/mailer/templates'),
-    notifier = {
-      service: 'postmark',
-      APN: false,
-      email: false, // true
-      actions: ['comment'],
-      tplPath: templatePath,
-      key: 'POSTMARK_KEY',
-      parseAppId: 'PARSE_APP_ID',
-      parseApiKey: 'PARSE_MASTER_KEY'
-    };
+    rootPath = path.normalize(__dirname + '/..');
+
+var notifier = {
+  service: 'postmark',
+  email: true,
+  actions: ['userActivation'],
+  tplPath: path.normalize(__dirname + '/../app/mailer/templates'),
+  key: '417f681c-1665-4098-8a1b-bef1e6da9d77'
+};
 
 module.exports = {
 

@@ -124,4 +124,25 @@ exports.user = function (req, res, next, id) {
       req.profile = user
       next()
     })
-}
+};
+
+exports.activate = function(req, res){
+
+  var activationToken = req.params['token'];
+  var user = req.user;
+
+  console.log('activationToken', activationToken);
+  console.log('user.activation_token', user.activation_token);
+
+  if(user.activation_token === activationToken) {
+
+    user.is_activated = true;
+    user.save(function() {
+      res.redirect('/welcome');
+    });
+
+  } else {
+    res.redirect('/');
+  }
+
+};
