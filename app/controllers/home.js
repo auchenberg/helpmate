@@ -11,10 +11,11 @@ exports.index = function(req, res){
 
 };
 
-
 exports.soon = function(req, res){
-
   res.render('home/soon');
+};
 
 
+exports.welcome = function(req, res){
+  res.render('home/welcome');
 };
