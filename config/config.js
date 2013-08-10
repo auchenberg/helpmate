@@ -40,12 +40,12 @@ module.exports = {
     facebook: {
       clientID: '228897420592002',
       clientSecret: '24c501d205de58738b49eca078c53814',
-      callbackURL: 'http://beta.helpmate.dk/auth/facebook/callback'
+      callbackURL: 'http://helpmate.dk/auth/facebook/callback'
     },
     google: {
       clientID: 'APP_ID',
       clientSecret: 'APP_SECRET',
-      callbackURL: 'http://beta.helpmate.dk/auth/google/callback'
+      callbackURL: 'http://helpmate.dk/auth/google/callback'
     }
   }
 

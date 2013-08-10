@@ -17,7 +17,7 @@ var Notify = {
       subject: 'Du er blevet inviteret til Helpmate!',
       locals: {
         name: user.name,
-        link: 'http://beta.helpmate.dk/user/activate/' + user.activation_token
+        link: 'http://helpmate.dk/user/activate/' + user.activation_token
       }
     };
 
