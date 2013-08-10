@@ -29,6 +29,12 @@ exports.authCallback = function(req, res) {
 
   var user = req.user;
 
+  if (req.session.returnTo) {
+    res.redirect(req.session.returnTo)
+    delete req.session.returnTo;
+    return;
+  }
+
   if(!user.is_activated) {
     req.logout();
     res.redirect('/soon?activated=false');
