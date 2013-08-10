@@ -174,4 +174,15 @@ UserSchema.methods = {
   }
 };
 
+UserSchema.statics = {
+
+  getAll: function(cb) {
+
+    this.find({})
+      .sort({'createdAt': -1}) // sort by date
+      .exec(cb);
+  }
+
+};
+
 mongoose.model('User', UserSchema);
