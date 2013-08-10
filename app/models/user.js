@@ -16,6 +16,7 @@ var UserSchema = new Schema({
   provider: { type: String, default: '' },
   hashed_password: { type: String, default: '' },
   salt: { type: String, default: '' },
+  activation_token: { type: String, default: '' },
   authToken: { type: String, default: '' },
   is_activated: { type: Boolean, default: false },
   is_admin: { type: Boolean, default: false },

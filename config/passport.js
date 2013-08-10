@@ -3,8 +3,18 @@ var mongoose = require('mongoose'),
   LocalStrategy = require('passport-local').Strategy,
   FacebookStrategy = require('passport-facebook').Strategy,
   GoogleStrategy = require('passport-google-oauth').OAuth2Strategy,
-  User = mongoose.model('User');
+  User = mongoose.model('User'),
+  crypto = require('crypto');
 
+
+
+function generateActivationToken(callback) {
+
+  crypto.randomBytes(16, function(ex, buf) {
+    var token = buf.toString('hex');
+    callback(token);
+  });
+}
 
 module.exports = function (passport, config) {
   // require('./initializer')
@@ -53,20 +63,27 @@ module.exports = function (passport, config) {
 
         if (!user) {
 
-          user = new User({
-            name: profile.displayName,
-            email: profile.emails[0].value,
-            username: profile.username,
-            provider: 'facebook',
-            facebook: profile._json
+          generateActivationToken(function(token) {
+
+            user = new User({
+              name: profile.displayName,
+              email: profile.emails[0].value,
+              username: profile.username,
+              provider: 'facebook',
+              facebook: profile._json,
+              activation_token: token
+            });
+
+            user.save(function (err) {
+              if (err) {
+                console.log(err);
+              }
+              return done(err, user);
+            });
+
           });
 
-          user.save(function (err) {
-            if (err) {
-              console.log(err);
-            }
-            return done(err, user);
-          });
+
         }
         else {
           return done(err, user);
