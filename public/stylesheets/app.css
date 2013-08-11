@@ -7,6 +7,12 @@ body.state-logged-in {
   overflow: hidden;
 }
 
+/* line 11, ../../app/assets/stylesheets/app.scss */
+.sans {
+  font-family: "freight-sans-pro";
+  font-weight: light;
+}
+
 /*
  * Bootstrap v3.0.0
  *
@@ -6660,24 +6666,24 @@ td.visible-print {
 }
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
-/* line 14, ../../app/assets/stylesheets/app.scss */
+/* line 19, ../../app/assets/stylesheets/app.scss */
 .grid-tile {
   background: #fff;
   padding: 25px;
   margin-bottom: 16px;
 }
 
-/* line 20, ../../app/assets/stylesheets/app.scss */
+/* line 25, ../../app/assets/stylesheets/app.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 24, ../../app/assets/stylesheets/app.scss */
+/* line 29, ../../app/assets/stylesheets/app.scss */
 .btn {
   font-weight: normal;
 }
 
-/* line 28, ../../app/assets/stylesheets/app.scss */
+/* line 33, ../../app/assets/stylesheets/app.scss */
 .img-rounded {
   margin: 20px 0;
 }
@@ -6702,7 +6708,7 @@ td.visible-print {
 /* line 18, ../../app/assets/stylesheets/lib/_sidebar.scss */
 .content-box {
   position: absolute;
-  top: 50px;
+  top: 0;
   bottom: 0;
   left: 350px;
   right: 0;
