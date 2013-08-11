@@ -39,10 +39,14 @@ exports.show = function(req, res){
       return res.render('500');
     }
 
-    res.render('requests/show', {
-      requests: requests,
-      request: req.request
+    Request.load(req.params.id, function(err, request){
+      res.render('requests/show', {
+        requests: requests,
+        request: request
+      });
     });
+
+
   });
 
 };
