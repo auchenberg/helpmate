@@ -8,6 +8,7 @@ var async = require('async'),
     settings = require('../app/controllers/settings'),
     admin = require('../app/controllers/admin'),
     payment = require('../app/controllers/payment');
+    invites = require('../app/controllers/invites');
 
 var loggedInAuth = [auth.requiresLogin, auth.requiresActivation];
 var adminAuth = [auth.requiresLogin, auth.requiresAdmin];
@@ -22,6 +23,7 @@ module.exports = function (app, passport) {
   app.get('/', home.index);
   app.get('/soon', home.soon);
   app.get('/login', users.login);
+  app.post('/invite', invites.create);
 
   // Logged in
   app.get('/dashboard', loggedInAuth, dashboard.index);
