@@ -1,7 +1,7 @@
 
 <div class="new-request-form">
 
-  <h3>Opret ny opgave</h3>
+  <h3>Create new request</h3>
 
   <form action="/requests" method="post">
     <input type="hidden" name="_csrf" value="{{csrf_token}}" />
@@ -13,7 +13,7 @@
         <textarea class="form-control" name="content" id="content" placeholder="Give us some details about your request"></textarea>
       </div>
 
-      <button type="submit" class="btn btn-success pull-right">Opret opgave</button>
+      <button type="submit" class="btn btn-success pull-right">Send request</button>
     </fieldset>
   </form>
 
