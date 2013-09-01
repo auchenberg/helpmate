@@ -6,25 +6,25 @@
   <form action="/settings" method="post">
     <input type="hidden" name="_csrf" value="{{csrf_token}}" />
     <fieldset>
-
-      <div class="row">
-        <div class="col-lg-8">
-          <legend>Name</legend>
-          <div class="form-group">
-            <input type="text" class="form-control" name="name" value="{{user.name}}">
+        <legend>Name</legend>
+        <div class="row form-group">
+          <div class="col-lg-4">
+              <input type="text" class="form-control" name="first_name" value="{{user.first_name}}">
           </div>
-        </div>
-      </div>
+
+          <div class="col-lg-4">
+            <input type="text" class="form-control" name="last_name" value="{{user.last_name}}">
+          </div>
+       </div>
 
     </fieldset>
 
     <fieldset>
 
       <div class="row">
+        <legend>Home Address</legend>
+
         <div class="col-lg-8">
-
-          <legend>Home Address</legend>
-
           <div class="form-group">
             <input type="text" class="form-control" name="home_street_1" value="{{user.home_street_1}}" placeholder="home_street_1">
           </div>
@@ -50,12 +50,10 @@
     </fieldset>
 
     <fieldset>
+      <legend>Work Address</legend>
 
       <div class="row">
         <div class="col-lg-8">
-
-          <legend>Work Address</legend>
-
           <div class="form-group">
             <input type="text" class="form-control" name="work_street_1" value="{{user.work_street_1}}" placeholder="work_street_1">
           </div>

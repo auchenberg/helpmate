@@ -26,7 +26,8 @@
     "notifier": "latest",
     "underscore": "latest",
     "async": "latest",
-    "forever": "latest"
+    "forever": "latest",
+    "paymill-node": "latest"
   },
   "devDependencies": {
     "supertest": "latest",

@@ -1,7 +1,55 @@
-<div class="content-fixed settings">
+<div class="content-fixed settings subscription-settings">
 
   {{>settings/navigation}}
 
   <h3>Subscription</h3>
+
+  <p>Helpmate is a recurring subscription. Signing up for any plan means you agree to our terms of service and privacy policy. If you're updating your plan, your credit card will be billed immediately after submitting this form.</p>
+
+  <h4>Available subscriptions</h4>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Subscription</th>
+        <th>Price</th>
+        <th>Requests per month</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Beta</td>
+        <td>&euro;70/month</td>
+        <td>Unlimited</td>
+        <td>Your plan</td>
+      </tr>
+      <tr>
+        <td>Large</td>
+        <td>&euro;50/month</td>
+        <td>30</td>
+        <td><button type="submit" class="btn btn-default btn-sm" disabled="disabled">Downgrade</button></td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>&euro;30/month</td>
+        <td>20</td>
+        <td><button type="submit" class="btn btn-default btn-sm" disabled="disabled">Downgrade</button></td>
+      </tr>
+      <tr>
+        <td>Small</td>
+        <td>&euro;20/month</td>
+        <td>5</td>
+        <td><button type="submit" class="btn btn-default btn-sm" disabled="disabled">Downgrade</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Credit card details</h3>
+
+  <button type="submit" data-toggle="modal" data-target="#new-creditcard" class="btn btn-primary">Update credit card details</button>
+
+
+  {{>settings/billing/new_creditcard}}
 
 </div>

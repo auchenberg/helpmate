@@ -6,7 +6,8 @@ var async = require('async'),
     home = require('../app/controllers/home'),
     dashboard = require('../app/controllers/dashboard'),
     settings = require('../app/controllers/settings'),
-    admin = require('../app/controllers/admin');
+    admin = require('../app/controllers/admin'),
+    payment = require('../app/controllers/payment');
 
 var loggedInAuth = [auth.requiresLogin, auth.requiresActivation];
 var adminAuth = [auth.requiresLogin, auth.requiresAdmin];
@@ -35,6 +36,9 @@ module.exports = function (app, passport) {
   app.get('/settings/preferences', loggedInAuth, settings.preferences);
   app.get('/settings/subscription', loggedInAuth, settings.subscription);
   app.get('/settings/billing', loggedInAuth, settings.billing);
+  app.post('/settings/billing/creditcard', loggedInAuth, payment.creditcard);
+
+  app.get('/settings/billing/setup', loggedInAuth, payment.setup);
 
   app.get('/signup', users.signup);
   app.get('/logout', users.logout);

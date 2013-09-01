@@ -19,6 +19,7 @@ module.exports = {
     app: {
       name: 'Helpmate'
     },
+    paymill: '509a50fd7b643a2452f1dd25e60673b2',
     facebook: {
       clientID: '423774561071001',
       clientSecret: '08e8fa68803bbdde79a0722d1688dc0e',
@@ -37,6 +38,7 @@ module.exports = {
     app: {
       name: 'Helpmate'
     },
+    paymill: '509a50fd7b643a2452f1dd25e60673b2',
     facebook: {
       clientID: '228897420592002',
       clientSecret: '24c501d205de58738b49eca078c53814',

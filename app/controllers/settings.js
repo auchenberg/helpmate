@@ -33,12 +33,15 @@ exports.preferences = function(req, res){
 
 exports.billing = function(req, res){
   res.render('settings/billing', {
-    user: req.user
+    user: req.user,
+    contracts: req.user.contracts,
+    section: 'billing'
   });
 };
 
 exports.subscription = function(req, res){
   res.render('settings/subscription', {
-    user: req.user
+    user: req.user,
+    section: 'billing'
   });
 };

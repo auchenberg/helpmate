@@ -11,6 +11,8 @@ var mongoose = require('mongoose'),
 
 var UserSchema = new Schema({
   name: { type: String, default: '' },
+  first_name: { type: String, default: '' },
+  last_name: { type: String, default: '' },
   email: { type: String, default: '' },
   username: { type: String, default: '' },
   provider: { type: String, default: '' },
@@ -31,7 +33,8 @@ var UserSchema = new Schema({
   work_zip: { type: String, default: '' },
   phone_number: { type: String, default: '' },
   facebook: {},
-  google: {}
+  google: {},
+  contracts : [{ type: Schema.Types.ObjectId, ref: 'Contract' }]
 });
 
 /**
@@ -173,7 +176,8 @@ UserSchema.methods = {
     } catch (err) {
       return '';
     }
-  }
+  },
+
 };
 
 UserSchema.statics = {
