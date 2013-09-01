@@ -34,10 +34,33 @@ body {
   margin: 20px 0;
 }
 
+.btn-outline {
+  font-size: inherit;
+  font-weight: 500;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #FFF;
+  border-color: rgba(255, 255, 255, 0.5);
+  transition: all .1s ease-in-out;
+
+  &:hover,
+  &:active {
+    color: #22262e;
+    background-color: #FFF;
+    border-color: #FFF;
+  }
+}
+
+.form-control-outline {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #FFF;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
 // lib
 @import "lib/sidebar";
 @import "lib/navigation";
-@import "lib/full-bg";
 
 // pages
 

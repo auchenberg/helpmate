@@ -1,22 +1,38 @@
+#big-video-wrap {
+  background-color: #000;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-height: 500px;
+  max-height: 900px;
+}
+
+#big-video-vid video {
+  opacity: 0.5
+}
+
+.home-intro {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+
+  section {
+   height: 100%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+}
+
 .home-intro,
 .login {
-
-  .btn-outline {
-    font-size: inherit;
-    font-weight: 500;
-    color: #FFF;
-    background-color: rgba(0, 0, 0, 0);
-    border-color: #FFF;
-    border-color: rgba(255, 255, 255, 0.5);
-    transition: all .1s ease-in-out;
-
-    &:hover,
-    &:active {
-      color: #22262e;
-      background-color: #FFF;
-      border-color: #FFF;
-    }
-  }
 
   .welcome {
     color: #F9F9F9;
@@ -66,10 +82,15 @@
     }
 
     .info {
+      position: absolute;
       text-align: center;
       width: auto;
       height: 350px;
-      top: -120px;
+      width: 300px;
+      top: 50%;
+      left: 50%;
+      margin-left: -150px;
+      margin-top: -200px;
     }
 
     .read-more-button {
@@ -83,12 +104,32 @@
   }
 }
 
+.home-footer {
+  background: #000;
+  padding: 60px 0 150px 0;
+  color: #fff;
+  text-align: center;
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  form {
+    transition: opacity .4s ease-in-out;
+    margin-top: 50px;
+  }
+
+  .invite-success {
+    display: none;
+  }
+}
+
 .content-home {
   padding: 25px;
   max-width: 600px;
   margin:0 auto;
 
-  ol{
+  ol {
     display:block;
     counter-reset: item;
     text-align:left;

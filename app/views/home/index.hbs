@@ -1,11 +1,11 @@
 <header class="home-intro">
 
-  <section class="welcome full-bg-banner">
+  <section class="welcome">
     <span class="gradient"></span>
     <nav>
       <ul>
         <li>
-          <a class="btn btn-outline" href="/login">Login</a>
+          <a data-toggle="modal" data-target="#login-modal" class="btn btn-outline">Login</a>
         </li>
       </ul>
     </nav>
@@ -48,12 +48,55 @@
       </div>
     </li>
   </ol>
-
-  <div class="text-center">
-    <a href="/soon" class="btn btn-success">Kom igang!</a>
-  </div>
-
 </div>
+
+<footer class="home-footer">
+  <img class="logo" src="/img/logo_no_text.png" alt="Helpmate" width="140" height="126" />
+  <h2 class="sans">Interesseret? Vi er snart klar.</h2>
+
+  <form method="POST" action="/invites" class="form-inline invite-email-form">
+    <input type="hidden" name="_csrf" value="{{csrf_token}}" />
+    <div class="form-group">
+      <input class="form-control form-control-outline input-email" type="email" name="email" placeholder="Din email addrese">
+    </div>
+    <input class="btn btn-outline input-submit" type="submit" value="Skriv mig op">
+  </form>
+
+  <div class="invite-success">
+    <h3 class="sans">Tak! Du hører snart fra os...</h3>
+  </div>
+</footer>
+
+
+
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="login-box">
+        <a href="/auth/facebook" class="button fb">Log in with Facebook<span></span></a>
+
+        <h3>or</h3>
+
+        <form action="/users/session" method="post">
+          <fieldset>
+            <div class="form-group">
+              <input type="text" class="form-control" name="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-success">Login</button>
+          </fieldset>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <script>
 // When ready...
@@ -63,5 +106,16 @@ window.addEventListener("load",function() {
     // Hide the address bar!
     window.scrollTo(0, 1);
   }, 0);
+
+
+  $(function() {
+        var BV = new $.BigVideo();
+  BV.init();
+  BV.show(['/video/stock-footage-slow-motion-girl-running-at-sunset.mp4', '/video/stock-footage-runner-on-steps-city-hall-london-tower-bridge-in-background.mp4', '/video/stock-footage-concert-arena-stage-series-version-from-to-concert-collection-thing-different.mp4', '/video/stock-footage-slim-athletic-girl-in-silhouette-practicing-yoga-overlooking-the-beach-at-sunrise.mp4', '/video/stock-footage-concert-arena-stage-series-version-from-to-concert-collection-thing-different.mp4', '/video/stock-footage-dream-vacation-road-trip-driving-an-open-top-cabriolet.mp4' ], {ambient:true, doLoop: true});
+  });
+
+
+
+
 });
 </script>
