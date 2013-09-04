@@ -23,8 +23,14 @@ module.exports = Object.create({
   },
 
   creditcard: function(req, res) {
+    var user = req.user;
 
-    console.log('creditcard', req);
+    user.paymill_token = req.body.token;
+    user.save(function() {
+      res.send({
+        status: 'ok'
+      });
+    });
 
   },
 

@@ -34,7 +34,9 @@ var UserSchema = new Schema({
   phone_number: { type: String, default: '' },
   facebook: {},
   google: {},
-  contracts : [{ type: Schema.Types.ObjectId, ref: 'Contract' }]
+  subscription_type: { type: String, default: 'beta' },
+  paymill_token: { type: String, default: '' },
+  paymill_subscription: { type: String, default: '' }
 });
 
 /**

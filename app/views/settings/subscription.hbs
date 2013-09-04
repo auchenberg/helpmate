@@ -47,7 +47,14 @@
 
   <h3>Credit card details</h3>
 
-  <button type="submit" data-toggle="modal" data-target="#new-creditcard" class="btn btn-primary">Update credit card details</button>
+  {{#if user.paymill_token.length}}
+    <button type="submit" data-toggle="modal" data-target="#new-creditcard" class="btn btn-primary">Update credit card details</button>
+  {{else}}
+    <button type="submit" data-toggle="modal" data-target="#new-creditcard" class="btn btn-primary">Add credit card details</button>
+  {{/if}}
+
+
+
 
 
   {{>settings/billing/new_creditcard}}

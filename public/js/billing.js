@@ -36,7 +36,7 @@ $(document).ready(function ($) {
             });
 
             req.done(function() {
-                $('#add-creditcard').modal('hide');
+                $('#new-creditcard').modal('hide');
             })
 
         }
