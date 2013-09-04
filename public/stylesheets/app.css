@@ -9345,12 +9345,7 @@ td.visible-print {
 .login .welcome nav li {
   list-style: none;
 }
-/* line 87, ../../app/assets/stylesheets/_home.scss */
-.home-intro .welcome nav li a,
-.login .welcome nav li a {
-  color: #fff;
-}
-/* line 93, ../../app/assets/stylesheets/_home.scss */
+/* line 89, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome .info,
 .login .welcome .info {
   position: absolute;
@@ -9363,7 +9358,7 @@ td.visible-print {
   margin-left: -150px;
   margin-top: -200px;
 }
-/* line 105, ../../app/assets/stylesheets/_home.scss */
+/* line 101, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome .read-more-button,
 .login .welcome .read-more-button {
   position: absolute;
@@ -9374,52 +9369,52 @@ td.visible-print {
   z-index: 1;
 }
 
-/* line 116, ../../app/assets/stylesheets/_home.scss */
+/* line 112, ../../app/assets/stylesheets/_home.scss */
 .home-footer {
   background: #000;
   padding: 60px 0 150px 0;
   color: #fff;
   text-align: center;
 }
-/* line 122, ../../app/assets/stylesheets/_home.scss */
+/* line 118, ../../app/assets/stylesheets/_home.scss */
 .home-footer .logo {
   margin-bottom: 30px;
 }
-/* line 126, ../../app/assets/stylesheets/_home.scss */
+/* line 122, ../../app/assets/stylesheets/_home.scss */
 .home-footer form {
   transition: opacity .4s ease-in-out;
   margin-top: 50px;
 }
-/* line 131, ../../app/assets/stylesheets/_home.scss */
+/* line 127, ../../app/assets/stylesheets/_home.scss */
 .home-footer .invite-success {
   display: none;
 }
 
-/* line 138, ../../app/assets/stylesheets/_home.scss */
+/* line 134, ../../app/assets/stylesheets/_home.scss */
 .content-home section {
   padding: 30px;
   overflow: hidden;
 }
-/* line 145, ../../app/assets/stylesheets/_home.scss */
+/* line 141, ../../app/assets/stylesheets/_home.scss */
 .content-home section .col-md-8,
 .content-home section .col-md-6,
 .content-home section .col-md-4 {
   padding: 0;
 }
-/* line 149, ../../app/assets/stylesheets/_home.scss */
+/* line 145, ../../app/assets/stylesheets/_home.scss */
 .content-home section > div {
   margin: 0 auto;
   max-width: 940px;
 }
-/* line 154, ../../app/assets/stylesheets/_home.scss */
+/* line 150, ../../app/assets/stylesheets/_home.scss */
 .content-home section.dark {
   background: #000;
 }
-/* line 157, ../../app/assets/stylesheets/_home.scss */
+/* line 153, ../../app/assets/stylesheets/_home.scss */
 .content-home section.dark h3, .content-home section.dark p {
   color: #fff;
 }
-/* line 165, ../../app/assets/stylesheets/_home.scss */
+/* line 161, ../../app/assets/stylesheets/_home.scss */
 .content-home ol {
   display: block;
   counter-reset: item;
@@ -9427,14 +9422,14 @@ td.visible-print {
   margin: 0;
   padding: 0;
 }
-/* line 172, ../../app/assets/stylesheets/_home.scss */
+/* line 168, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li {
   display: block;
   border-bottom: 2px solid #f3f3ed;
   position: relative;
   padding: 1em 0 1em 0;
 }
-/* line 178, ../../app/assets/stylesheets/_home.scss */
+/* line 174, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li h2 {
   font-size: 24px;
   line-height: 1em;
@@ -9443,7 +9438,7 @@ td.visible-print {
   font-weight: light;
   font-family: "freight-sans-pro";
 }
-/* line 187, ../../app/assets/stylesheets/_home.scss */
+/* line 183, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li p {
   font-size: 16px;
   line-height: 1.4em;
@@ -9451,7 +9446,7 @@ td.visible-print {
   font-weight: 500;
   margin-top: 1em;
 }
-/* line 197, ../../app/assets/stylesheets/_home.scss */
+/* line 193, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li:last-child {
   border: 0;
 }
