@@ -134,9 +134,32 @@
 }
 
 .content-home {
-  padding: 25px;
-  max-width: 600px;
-  margin:0 auto;
+
+  section {
+
+    padding: 30px;
+    overflow: hidden;
+
+    .col-md-6,
+    .col-md-4 {
+      padding: 0;
+    }
+
+    > div {
+     margin:0 auto;
+     max-width: 940px;
+    }
+
+    &.dark {
+      background: #000;
+
+      h3, p {
+        color: #fff;
+      }
+
+    }
+
+  }
 
   ol {
     display:block;
