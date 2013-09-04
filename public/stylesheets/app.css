@@ -9250,30 +9250,18 @@ td.visible-print {
 }
 
 /* line 1, ../../app/assets/stylesheets/_home.scss */
-#big-video-wrap {
-  background-color: #000;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  min-height: 500px;
-  max-height: 900px;
-}
-
-/* line 10, ../../app/assets/stylesheets/_home.scss */
-#big-video-vid video {
-  opacity: 0.5;
-}
-
-/* line 14, ../../app/assets/stylesheets/_home.scss */
 .home-intro {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
+  position: relative;
+  background-color: #333;
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 25em;
+  background-image: url("../img/splash-2.jpg");
 }
-/* line 23, ../../app/assets/stylesheets/_home.scss */
+/* line 14, ../../app/assets/stylesheets/_home.scss */
 .home-intro section {
   height: 100%;
   padding: 0;
@@ -9282,13 +9270,38 @@ td.visible-print {
   width: 100%;
   margin: 0 auto;
 }
+/* line 23, ../../app/assets/stylesheets/_home.scss */
+.home-intro .gradient {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: -moz-linear-gradient(top, rgba(69, 72, 77, 0) 0%, rgba(34, 34, 34, 0.15) 15%, rgba(0, 0, 0, 0.9) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69, 72, 77, 0)), color-stop(15%, rgba(34, 34, 34, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(69, 72, 77, 0) 0%, rgba(34, 34, 34, 0.15) 15%, rgba(0, 0, 0, 0.9) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(69, 72, 77, 0) 0%, rgba(34, 34, 34, 0.15) 15%, rgba(0, 0, 0, 0.9) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(69, 72, 77, 0) 0%, rgba(34, 34, 34, 0.15) 15%, rgba(0, 0, 0, 0.9) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(69, 72, 77, 0) 0%, rgba(34, 34, 34, 0.15) 15%, rgba(0, 0, 0, 0.9) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0045484d', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+}
 
-/* line 37, ../../app/assets/stylesheets/_home.scss */
+/* line 46, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome,
 .login .welcome {
   color: #F9F9F9;
 }
-/* line 41, ../../app/assets/stylesheets/_home.scss */
+/* line 50, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome h1,
 .login .welcome h1 {
   font-size: 60px;
@@ -9299,7 +9312,7 @@ td.visible-print {
   white-space: nowrap;
   font-weight: bold;
 }
-/* line 51, ../../app/assets/stylesheets/_home.scss */
+/* line 60, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome h2,
 .login .welcome h2 {
   font-size: 32px;
@@ -9309,7 +9322,7 @@ td.visible-print {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
   margin-top: 1em;
 }
-/* line 59, ../../app/assets/stylesheets/_home.scss */
+/* line 68, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome h2 span,
 .login .welcome h2 span {
   opacity: 0;
@@ -9319,7 +9332,7 @@ td.visible-print {
   -o-transition: all .35s ease-in;
   transition: all .35s ease-in;
 }
-/* line 69, ../../app/assets/stylesheets/_home.scss */
+/* line 78, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome nav,
 .login .welcome nav {
   position: absolute;
@@ -9327,17 +9340,17 @@ td.visible-print {
   top: 1em;
   right: 1em;
 }
-/* line 75, ../../app/assets/stylesheets/_home.scss */
+/* line 84, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome nav li,
 .login .welcome nav li {
   list-style: none;
 }
-/* line 78, ../../app/assets/stylesheets/_home.scss */
+/* line 87, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome nav li a,
 .login .welcome nav li a {
   color: #fff;
 }
-/* line 84, ../../app/assets/stylesheets/_home.scss */
+/* line 93, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome .info,
 .login .welcome .info {
   position: absolute;
@@ -9350,7 +9363,7 @@ td.visible-print {
   margin-left: -150px;
   margin-top: -200px;
 }
-/* line 96, ../../app/assets/stylesheets/_home.scss */
+/* line 105, ../../app/assets/stylesheets/_home.scss */
 .home-intro .welcome .read-more-button,
 .login .welcome .read-more-button {
   position: absolute;
@@ -9361,34 +9374,34 @@ td.visible-print {
   z-index: 1;
 }
 
-/* line 107, ../../app/assets/stylesheets/_home.scss */
+/* line 116, ../../app/assets/stylesheets/_home.scss */
 .home-footer {
   background: #000;
   padding: 60px 0 150px 0;
   color: #fff;
   text-align: center;
 }
-/* line 113, ../../app/assets/stylesheets/_home.scss */
+/* line 122, ../../app/assets/stylesheets/_home.scss */
 .home-footer .logo {
   margin-bottom: 30px;
 }
-/* line 117, ../../app/assets/stylesheets/_home.scss */
+/* line 126, ../../app/assets/stylesheets/_home.scss */
 .home-footer form {
   transition: opacity .4s ease-in-out;
   margin-top: 50px;
 }
-/* line 122, ../../app/assets/stylesheets/_home.scss */
+/* line 131, ../../app/assets/stylesheets/_home.scss */
 .home-footer .invite-success {
   display: none;
 }
 
-/* line 127, ../../app/assets/stylesheets/_home.scss */
+/* line 136, ../../app/assets/stylesheets/_home.scss */
 .content-home {
   padding: 25px;
   max-width: 600px;
   margin: 0 auto;
 }
-/* line 132, ../../app/assets/stylesheets/_home.scss */
+/* line 141, ../../app/assets/stylesheets/_home.scss */
 .content-home ol {
   display: block;
   counter-reset: item;
@@ -9396,14 +9409,14 @@ td.visible-print {
   margin: 0;
   padding: 0;
 }
-/* line 139, ../../app/assets/stylesheets/_home.scss */
+/* line 148, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li {
   display: block;
   border-bottom: 2px solid #f3f3ed;
   position: relative;
   padding: 1em 0 1em 0;
 }
-/* line 145, ../../app/assets/stylesheets/_home.scss */
+/* line 154, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li h2 {
   font-size: 24px;
   line-height: 1em;
@@ -9412,7 +9425,7 @@ td.visible-print {
   font-weight: light;
   font-family: "freight-sans-pro";
 }
-/* line 154, ../../app/assets/stylesheets/_home.scss */
+/* line 163, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li p {
   font-size: 16px;
   line-height: 1.4em;
@@ -9420,7 +9433,7 @@ td.visible-print {
   font-weight: 500;
   margin-top: 1em;
 }
-/* line 164, ../../app/assets/stylesheets/_home.scss */
+/* line 173, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li:last-child {
   border: 0;
 }
