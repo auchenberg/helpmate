@@ -3,7 +3,17 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    compass: {
+
+    'concurrent' : {
+      run : {
+        tasks: ['watch', 'nodemon'],
+        options: {
+          logConcurrentOutput: true
+        }
+      }
+    },
+
+    'compass' : {
       dist: {
         options: {
           sassDir: 'app/assets/stylesheets',
@@ -12,7 +22,7 @@ module.exports = function(grunt) {
       }
     },
 
-    watch: {
+    'watch' : {
       scripts: {
         files: '**/*.scss',
         tasks: ['compass'],
@@ -22,11 +32,26 @@ module.exports = function(grunt) {
       },
     },
 
+    'nodemon' : {
+      dev: {
+        options: {
+          file: 'server.js',
+          args: ['development'],
+          nodeArgs: ['--debug'],
+          env: {
+            PORT: '3000'
+          }
+        }
+      }
+    }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-nodemon');
+  grunt.loadNpmTasks('grunt-concurrent');
 
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['concurrent:run']);
 
 };

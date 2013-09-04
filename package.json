@@ -13,7 +13,6 @@
   "dependencies": {
     "express": "latest",
     "handlebars": "latest",
-    "handlebars": "latest",
     "express3-handlebars": "latest",
     "mongoose": "latest",
     "connect-mongo": "latest",
@@ -30,12 +29,10 @@
     "paymill-node": "latest"
   },
   "devDependencies": {
-    "supertest": "latest",
-    "should": "latest",
-    "mocha": "latest",
-    "nodemon": "latest",
-    "grunt": "~0.4.1",
-    "grunt-contrib-compass": "~0.4.1",
-    "grunt-contrib-watch": "latest"
+    "grunt": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-nodemon": "latest",
+    "grunt-concurrent": "latest"
   }
 }
