@@ -9394,27 +9394,37 @@ td.visible-print {
 .content-home section {
   padding: 30px;
   overflow: hidden;
+  position: relative;
 }
-/* line 140, ../../app/assets/stylesheets/_home.scss */
+/* line 141, ../../app/assets/stylesheets/_home.scss */
 .content-home section .col-md-8,
 .content-home section .col-md-6,
 .content-home section .col-md-4 {
   padding: 0;
 }
-/* line 144, ../../app/assets/stylesheets/_home.scss */
+/* line 145, ../../app/assets/stylesheets/_home.scss */
 .content-home section > div {
   margin: 0 auto;
   max-width: 940px;
 }
-/* line 149, ../../app/assets/stylesheets/_home.scss */
+/* line 150, ../../app/assets/stylesheets/_home.scss */
+.content-home section .figure {
+  position: absolute;
+  top: -50px;
+}
+/* line 155, ../../app/assets/stylesheets/_home.scss */
+.content-home section img {
+  margin-bottom: 20px;
+}
+/* line 159, ../../app/assets/stylesheets/_home.scss */
 .content-home section.dark {
   background: #000;
 }
-/* line 152, ../../app/assets/stylesheets/_home.scss */
+/* line 162, ../../app/assets/stylesheets/_home.scss */
 .content-home section.dark h3, .content-home section.dark p {
   color: #fff;
 }
-/* line 160, ../../app/assets/stylesheets/_home.scss */
+/* line 170, ../../app/assets/stylesheets/_home.scss */
 .content-home ol {
   display: block;
   counter-reset: item;
@@ -9422,14 +9432,14 @@ td.visible-print {
   margin: 0;
   padding: 0;
 }
-/* line 167, ../../app/assets/stylesheets/_home.scss */
+/* line 177, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li {
   display: block;
   border-bottom: 2px solid #f3f3ed;
   position: relative;
   padding: 1em 0 1em 0;
 }
-/* line 173, ../../app/assets/stylesheets/_home.scss */
+/* line 183, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li h2 {
   font-size: 24px;
   line-height: 1em;
@@ -9438,7 +9448,7 @@ td.visible-print {
   font-weight: light;
   font-family: "freight-sans-pro";
 }
-/* line 182, ../../app/assets/stylesheets/_home.scss */
+/* line 192, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li p {
   font-size: 16px;
   line-height: 1.4em;
@@ -9446,7 +9456,7 @@ td.visible-print {
   font-weight: 500;
   margin-top: 1em;
 }
-/* line 192, ../../app/assets/stylesheets/_home.scss */
+/* line 202, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li:last-child {
   border: 0;
 }

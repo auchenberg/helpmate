@@ -134,6 +134,7 @@
 
     padding: 30px;
     overflow: hidden;
+    position: relative;
 
     .col-md-8,
     .col-md-6,
@@ -144,6 +145,15 @@
     > div {
      margin:0 auto;
      max-width: 940px;
+    }
+
+    .figure {
+      position: absolute;
+      top: -50px;
+    }
+
+    img {
+      margin-bottom: 20px;
     }
 
     &.dark {
