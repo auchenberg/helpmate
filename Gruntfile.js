@@ -48,13 +48,12 @@ module.exports = function(grunt) {
     'push' : {
       options: {
         files: ['package.json'],
-        updateConfigs: [],
         add: true,
         addFiles: ['.'], // '.' for all files except ingored files in .gitignore
         commit: true,
-        commitMessage: 'Release v%VERSION%',
+        commitMessage: 'Release %VERSION%',
         commitFiles: ['-a'], // '-a' for all files
-        createTag: true,
+        createTag: false,
         tagName: 'v%VERSION%',
         tagMessage: 'Version %VERSION%',
         push: true,
@@ -71,6 +70,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-push-release');
 
   grunt.registerTask('default', ['concurrent:run']);
-  grunt.registerTask('deploy', ['heroku-deploy']);
+  grunt.registerTask('deploy', ['compass', 'push-commit']);
 
 };
