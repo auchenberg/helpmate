@@ -9400,25 +9400,26 @@ td.visible-print {
   padding: 30px;
   overflow: hidden;
 }
-/* line 144, ../../app/assets/stylesheets/_home.scss */
+/* line 145, ../../app/assets/stylesheets/_home.scss */
+.content-home section .col-md-8,
 .content-home section .col-md-6,
 .content-home section .col-md-4 {
   padding: 0;
 }
-/* line 148, ../../app/assets/stylesheets/_home.scss */
+/* line 149, ../../app/assets/stylesheets/_home.scss */
 .content-home section > div {
   margin: 0 auto;
   max-width: 940px;
 }
-/* line 153, ../../app/assets/stylesheets/_home.scss */
+/* line 154, ../../app/assets/stylesheets/_home.scss */
 .content-home section.dark {
   background: #000;
 }
-/* line 156, ../../app/assets/stylesheets/_home.scss */
+/* line 157, ../../app/assets/stylesheets/_home.scss */
 .content-home section.dark h3, .content-home section.dark p {
   color: #fff;
 }
-/* line 164, ../../app/assets/stylesheets/_home.scss */
+/* line 165, ../../app/assets/stylesheets/_home.scss */
 .content-home ol {
   display: block;
   counter-reset: item;
@@ -9426,14 +9427,14 @@ td.visible-print {
   margin: 0;
   padding: 0;
 }
-/* line 171, ../../app/assets/stylesheets/_home.scss */
+/* line 172, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li {
   display: block;
   border-bottom: 2px solid #f3f3ed;
   position: relative;
   padding: 1em 0 1em 0;
 }
-/* line 177, ../../app/assets/stylesheets/_home.scss */
+/* line 178, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li h2 {
   font-size: 24px;
   line-height: 1em;
@@ -9442,7 +9443,7 @@ td.visible-print {
   font-weight: light;
   font-family: "freight-sans-pro";
 }
-/* line 186, ../../app/assets/stylesheets/_home.scss */
+/* line 187, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li p {
   font-size: 16px;
   line-height: 1.4em;
@@ -9450,7 +9451,7 @@ td.visible-print {
   font-weight: 500;
   margin-top: 1em;
 }
-/* line 196, ../../app/assets/stylesheets/_home.scss */
+/* line 197, ../../app/assets/stylesheets/_home.scss */
 .content-home ol li:last-child {
   border: 0;
 }
