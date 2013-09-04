@@ -43,6 +43,23 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+
+    'push' : {
+      options: {
+        files: ['package.json'],
+        updateConfigs: [],
+        add: true,
+        addFiles: ['.'], // '.' for all files except ingored files in .gitignore
+        commit: true,
+        commitMessage: 'Release v%VERSION%',
+        commitFiles: ['-a'], // '-a' for all files
+        createTag: true,
+        tagName: 'v%VERSION%',
+        tagMessage: 'Version %VERSION%',
+        push: true,
+        pushTo: 'origin',
+      }
     }
 
   });
@@ -51,7 +68,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-concurrent');
+  grunt.loadNpmTasks('grunt-push-release');
 
   grunt.registerTask('default', ['concurrent:run']);
+  grunt.registerTask('deploy', ['heroku-deploy']);
 
 };
